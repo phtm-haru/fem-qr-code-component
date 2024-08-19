@@ -16,7 +16,7 @@
 .prettierignore
 
 #####################################3
-/design
-preview.jpg
-style-guide.md
-deploy.md
+design/
+/preview.jpg
+/style-guide.md
+/deploy.md
