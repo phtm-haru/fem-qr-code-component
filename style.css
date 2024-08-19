@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(212, 45%, 89%);
+  font-family: "Outfit", sans-serif;
+}
+
+/* Mobile */
+.wrapper {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
+  gap: 0.9375rem;
+  height: 100dvh;
+  padding: 0.625rem;
+}
+/* ----- */
+
+.grid-area-header {
+  grid-area: header;
+  align-self: center;
+}
+
+.grid-area-main {
+  grid-area: main;
+  align-self: center;
+  justify-self: center;
+}
+
+.grid-area-footer {
+  grid-area: footer;
+  align-self: self-end;
+}
+
+.grid-area-header h1 {
+  font-size: clamp(2.1rem, 5.5vw, 5rem);
+  line-height: 1em;
+  text-align: center;
+  color: hsl(218, 44%, 22%);
+}
+
+.card {
+  width: 20rem;
+  height: 31.25rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1.25rem;
+  padding: 16px 16px 40px 16px;
+}
+
+.card__img {
+  width: 18rem;
+  height: 18rem;
+  border-radius: 0.625rem;
+  margin-bottom: 1.5rem;
+}
+
+.card__body {
+  text-align: center;
+}
+
+.card__title {
+  color: hsl(218, 44%, 22%);
+  font-size: 1.375rem;
+  font-weight: bold;
+  line-height: 120%;
+  letter-spacing: 0;
+  margin-bottom: 1rem;
+}
+
+.card__text {
+  color: hsl(216, 15%, 48%);
+  font-size: 0.9375rem;
+  line-height: 140%;
+  letter-spacing: 0.0125rem;
+  padding: 0 1rem;
+}
+
+/* From Frontend Mentor */
+.attribution {
+  font-size: 11px;
+  width: 100%;
+  padding: 1em;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Desktop */
+@media (width >= 1024px) {
+  .wrapper {
+    display: grid;
+    grid-template-areas:
+      "header header main main"
+      "header header main main"
+      "footer footer footer footer";
+    gap: 0.625rem;
+    height: 100dvh;
+    padding: 0.625rem;
+  }
+
+  .grid-area-header {
+    grid-area: header;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .grid-area-header h1 {
+    text-align: start;
+    max-width: 10ch;
+  }
+
+  .grid-area-main {
+    grid-area: main;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .grid-area-footer {
+    grid-area: footer;
+    align-self: self-end;
+  }
+}
