@@ -23,8 +23,8 @@ My Solution to QR code component challenge
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://phtm-haru.github.io/fem-qr-code-component/)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/qr-code-component-sgenvR7rV7)
+- Live Site URL: [Live Site](https://phtm-haru.github.io/fem-qr-code-component/)
 
 ## My process
 
