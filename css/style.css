@@ -59,6 +59,7 @@ body {
   background-color: hsl(0, 0%, 100%);
   border-radius: 1.25rem;
   padding: 16px 16px 40px 16px;
+  transition: transform 200ms;
 }
 
 .card__img {
@@ -98,6 +99,13 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* Mobile Below 375px */
+@media (width < 375px) {
+  .card {
+    transform: scale(0.9);
+  }
 }
 
 /* Desktop */
