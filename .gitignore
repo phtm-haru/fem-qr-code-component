@@ -15,8 +15,7 @@
 .DS_Store
 .prettierignore
 
-#####################################3
 design/
-/preview.jpg
-/style-guide.md
-/deploy.md
+preview.jpg
+style-guide.md
+deploy.md
